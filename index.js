@@ -30,7 +30,7 @@ dotenv.config();
 async function publishMessage(text) {
   try {
     const result = await client.chat.postMessage({
-      token: "xoxb-3164401680611-3591394895410-m13R00VTr9fm1zin2zxgB6wz",
+      token: "xoxb-3164401680611-3591394895410-sXQlWpvucfo3dnoOdDL1oBmW",
       channel: "C03HD4BM490",
       text: text,
     });
@@ -43,16 +43,9 @@ async function publishMessage(text) {
   }
 }
 
-// publishMessage("stand up meeting in a bit");
+// publishMessage("stand up meeting it");
 
-//__________________________________________________________________________________________
-// var currentDateTime = new Date();
-// console.log("The current date time is as follows:");
-// console.log(currentDateTime);
-// var resultInSeconds=currentDateTime.getTime() / 1000;
-// console.log("The current date time in seconds is as follows:")
-// console.log(resultInSeconds);
-
+// Function Checks the callender and sends message to the channel
 function checkEvents() {
   var currentDateTime = new Date();
   console.log("The current date time is as follows:");
@@ -176,3 +169,6 @@ function checkEvents() {
   }
   //______________________________________________________________________________________
 }
+
+
+checkEvents()
